@@ -1,8 +1,10 @@
 import { Router } from "express"
-import authUser from "./auth/router"
+import authUserRouter from "./auth/router"
+import contactRouter from "./contact/router"
 
 const router = Router()
 
-router.use("/", authUser)
-// kjh
+router.use("/", authUserRouter)
+router.use("/", contactRouter)
+
 export default router

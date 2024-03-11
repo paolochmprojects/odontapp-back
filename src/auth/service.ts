@@ -33,7 +33,6 @@ export const authService = {
         const userInDB = await db.user.findUnique({
             where: {
                 email: data.email
-                //jg
             }
         })
         if (!userInDB) return false

@@ -4,7 +4,7 @@ import contactRouter from "./contact/router"
 
 const router = Router()
 
-router.use("/", authUserRouter)
+router.use("/auth", authUserRouter)
 router.use("/", contactRouter)
 
 export default router
